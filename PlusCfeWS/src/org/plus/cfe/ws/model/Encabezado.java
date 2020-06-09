@@ -1,27 +1,27 @@
 package org.plus.cfe.ws.model;
 
-import java.sql.Date;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement(name = "encabezado")
 public class Encabezado {
 
-	private String codMoneda;
+	private String codmoneda;
 	private String comentarios;
-	private int emisor; // Integer Identificación de la empresa que emite el DocFE, no se si es int
-	private int facTortrm; // numerico
-	private Date fecha; // chequear data si es con la libreria que va
-	private Date fVence;
-	private int idSuc;
-	private int idVendedor;
+	private int emisor;
+	private java.math.BigDecimal factortrm;
+	private java.sql.Timestamp fecha;  
+	private java.sql.Timestamp fvence;
+	private int idsuc;
+	private int idvendedor;
 	private int nit;
 	private int numero;
 	private String prefijo;
-	private int subTotal; // numerico
+	private String ordencompra;
+	private java.math.BigDecimal subtotal;
 	private int sucursal;
-	private int total; // numerico
+	private java.math.BigDecimal total;
 	private String usuario;
 	private int totalDet;
-	private int totaLlmp;
+	private int totalImp;
 }
