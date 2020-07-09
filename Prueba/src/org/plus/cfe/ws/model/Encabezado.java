@@ -29,16 +29,30 @@ public class Encabezado implements Serializable {
 	private String usuario;
 	private int totalDet;
 	private int totalImp;
-	
+	private String mediopago;
+	private int metodopago;
 
-	
-	
 	
 	public Encabezado() {
 		
 	}
 	
 	
+	
+	public String getMediopago() {
+		return mediopago;
+	}
+	@XmlElement
+	public void setMediopago(String mediopago) {
+		this.mediopago = mediopago;
+	}
+	public int getMetodopago() {
+		return metodopago;
+	}
+	@XmlElement
+	public void setMetodopago(int metodopago) {
+		this.metodopago = metodopago;
+	}
 	public String getCodmoneda() {
 		return codmoneda;
 	}

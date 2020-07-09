@@ -1,5 +1,6 @@
 package org.plus.cfe.ws.model;
 import java.io.Serializable;
+import java.sql.Timestamp;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -19,12 +20,48 @@ public class Tercero implements Serializable {
 	private String razonsocial;
 	private int tdoc;
 	private String tipopersona;
+	private Timestamp frevision;
+	private String obligacionfiscal;
+	private String regimentributacion;
+	private int tributoreceptor;
 	
-	
-	
+
+
 	public Tercero() {
 		
 	}
+	
+	
+	
+	public String getObligacionfiscal() {
+		return obligacionfiscal;
+	}
+	@XmlElement
+	public void setObligacionfiscal(String obligacionfiscal) {
+		this.obligacionfiscal = obligacionfiscal;
+	}
+	public String getRegimentributacion() {
+		return regimentributacion;
+	}
+	@XmlElement
+	public void setRegimentributacion(String regimentributacion) {
+		this.regimentributacion = regimentributacion;
+	}
+	public int getTributoreceptor() {
+		return tributoreceptor;
+	}
+	@XmlElement
+	public void setTributoreceptor(int tributoreceptor) {
+		this.tributoreceptor = tributoreceptor;
+	}
+	public Timestamp getFrevision() {
+		return frevision;
+	}
+	@XmlElement
+	public void setFrevision(Timestamp frevision) {
+		this.frevision = frevision;
+	}
+
 	
 	
 	public String getApl2() {

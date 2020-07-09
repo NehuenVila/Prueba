@@ -34,8 +34,31 @@ import javax.xml.bind.annotation.XmlElement;
 
 public class Main implements Serializable {
 
-	public static void main(String[] args) {
+	private static final long serialVersionUID = 6106269076155338045L;
+
+public static void main(String[] args) throws Exception {
 		
+		
+		InterfaceFE interfaceFE = new InterfaceFE();
+		String message = null;
+		
+		JSONObject jsonFE = new JSONObject();	
+		
+		JSONObject jsonDocumento = interfaceFE.getJSonDocumento();
+		if (jsonDocumento != null) {
+			
+			jsonFE.put("documento", jsonDocumento);
+			
+			message = interfaceFE.executeJsonPOST(interfaceFE.endPointWS_DocFE, jsonFE, interfaceFE.userWS, interfaceFE.pwdWS);
+			
+			if (message != null) {
+				System.out.println(message);
+			}			
+		}
+
+		return;
+		
+		/*
 		Timestamp fecha = new Timestamp(System.currentTimeMillis());
 		Timestamp fechaVence = new Timestamp(System.currentTimeMillis());
 		java.math.BigDecimal precio = java.math.BigDecimal.valueOf(100);
@@ -99,7 +122,9 @@ public class Main implements Serializable {
 		System.out.println(JSON);
 		//url: https://ws.dsnube.co/dsrest/dsdatasnapfe.dll/datasnap/rest/TFactura/pdffe
 		
-		executeJsonPOST("https://ws.dsnube.co/dsrest/dsdatasnapfe.dll/datasnap/rest/TFactura/docfe", JSON, "uXLPkYduIUpzf5SktdnOLmyEKy6/prJM2TULdljLh/c=", "S+2wrSyDfuNe/c1ywwJC3Em9P8qRMk7IyTW4tnmr0U37SVlx5PLNZKqlLb/o4J9sLeqMOfsypNK1fhPwCnxW2w==" );
+		//executeJsonPOST("https://ws.dsnube.co/dsrest/dsdatasnapfe.dll/datasnap/rest/TFactura/docfe", JSON, "uXLPkYduIUpzf5SktdnOLmyEKy6/prJM2TULdljLh/c=", "S+2wrSyDfuNe/c1ywwJC3Em9P8qRMk7IyTW4tnmr0U37SVlx5PLNZKqlLb/o4J9sLeqMOfsypNK1fhPwCnxW2w==" );
+		 * 
+		 */
 
 	}
 
