@@ -23,6 +23,7 @@ public class Detalle implements Serializable {
 	private java.math.BigDecimal pos;
 	private java.math.BigDecimal precio;
 	private java.math.BigDecimal preciousd;
+	private String subpartidaarancelaria;
 	private java.math.BigDecimal subtotal;
 	private java.math.BigDecimal subtotalusd;
 
@@ -32,6 +33,13 @@ public class Detalle implements Serializable {
 	}
 	
 	
+	public String getSubpartidaarancelaria() {
+		return subpartidaarancelaria;
+	}
+	@XmlElement
+	public void setSubpartidaarancelaria(String subpartidaarancelaria) {
+		this.subpartidaarancelaria = subpartidaarancelaria;
+	}
 	public String getAdicional() {
 		return adicional;
 	}

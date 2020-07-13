@@ -11,6 +11,7 @@ import javax.xml.bind.annotation.XmlElement;
 @XmlRootElement(name = "encabezado")
 public class Encabezado implements Serializable {
 
+	private java.math.BigDecimal baseimpuesto;
 	private String codmoneda;
 	private String comentarios;
 	private int emisor;
@@ -19,18 +20,21 @@ public class Encabezado implements Serializable {
 	private java.sql.Timestamp fvence;
 	private int idsuc;
 	private int idvendedor;
+	private java.math.BigDecimal iva;
+	private String mediopago;
+	private int metodopago;
 	private int nit;
 	private int numero;
-	private String prefijo;
 	private String ordencompra;
+	private String prefijo;
 	private java.math.BigDecimal subtotal;
 	private int sucursal;
+	private String terminospago;
 	private java.math.BigDecimal total;
 	private String usuario;
 	private int totalDet;
 	private int totalImp;
-	private String mediopago;
-	private int metodopago;
+	private String versionfe;
 
 	
 	public Encabezado() {
@@ -39,6 +43,34 @@ public class Encabezado implements Serializable {
 	
 	
 	
+	public java.math.BigDecimal getBaseimpuesto() {
+		return baseimpuesto;
+	}
+	@XmlElement
+	public void setBaseimpuesto(java.math.BigDecimal baseimpuesto) {
+		this.baseimpuesto = baseimpuesto;
+	}
+	public java.math.BigDecimal getIva() {
+		return iva;
+	}
+	@XmlElement
+	public void setIva(java.math.BigDecimal iva) {
+		this.iva = iva;
+	}
+	public String getTerminospago() {
+		return terminospago;
+	}
+	@XmlElement
+	public void setTerminospago(String terminospago) {
+		this.terminospago = terminospago;
+	}
+	public String getVersionfe() {
+		return versionfe;
+	}
+	@XmlElement
+	public void setVersionfe(String versionfe) {
+		this.versionfe = versionfe;
+	}
 	public String getMediopago() {
 		return mediopago;
 	}

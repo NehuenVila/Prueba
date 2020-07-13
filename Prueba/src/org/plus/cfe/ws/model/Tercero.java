@@ -17,12 +17,12 @@ public class Tercero implements Serializable {
 	private int nit;
 	private String nom1;
 	private String nom2;
+	private String obligacionfiscal;
 	private String razonsocial;
+	private String regimentributacion;
 	private int tdoc;
 	private String tipopersona;
 	private Timestamp frevision;
-	private String obligacionfiscal;
-	private String regimentributacion;
 	private int tributoreceptor;
 	
 

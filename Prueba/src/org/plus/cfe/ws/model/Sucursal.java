@@ -9,6 +9,8 @@ public class Sucursal {
 	private String ciudad;
 	private String codcliente;
 	private String codigopostal;
+	private String contacto1;
+	private String ctoemail1;
 	private String departamento;
 	private String direcion1;
 	private String depto;
@@ -16,10 +18,11 @@ public class Sucursal {
 	private String emailFe;
 	private int idsuc;
 	private int idvendedor;
-	private int idzona;
+//	private int idzona;
 	private String movil;
-	private String num;
-	private int nit;
+	private String mun;
+	private String paisreceptor;
+//	private int nit;
 	private String razonsocial;
 	private String telefono1;
 	private String telefono2;
@@ -32,6 +35,35 @@ public class Sucursal {
 
 
 	
+	
+	public String getContacto1() {
+		return contacto1;
+	}
+	@XmlElement
+	public void setContacto1(String contacto1) {
+		this.contacto1 = contacto1;
+	}
+	public String getCtoemail1() {
+		return ctoemail1;
+	}
+	@XmlElement
+	public void setCtoemail1(String ctoemail1) {
+		this.ctoemail1 = ctoemail1;
+	}
+	public String getMun() {
+		return mun;
+	}
+	@XmlElement
+	public void setMun(String mun) {
+		this.mun = mun;
+	}
+	public String getPaisreceptor() {
+		return paisreceptor;
+	}
+	@XmlElement
+	public void setPaisreceptor(String paisreceptor) {
+		this.paisreceptor = paisreceptor;
+	}
 	public String getCodigopostal() {
 		return codigopostal;
 	}
@@ -102,13 +134,13 @@ public class Sucursal {
 	public void setIdvendedor(int idvendedor) {
 		this.idvendedor = idvendedor;
 	}
-	public int getIdzona() {
-		return idzona;
-	}
-	@XmlElement
-	public void setIdzona(int idzona) {
-		this.idzona = idzona;
-	}
+//	public int getIdzona() {
+//		return idzona;
+//	}
+//	@XmlElement
+//	public void setIdzona(int idzona) {
+//		this.idzona = idzona;
+//	}
 	public String getMovil() {
 		return movil;
 	}
@@ -116,20 +148,13 @@ public class Sucursal {
 	public void setMovil(String movil) {
 		this.movil = movil;
 	}
-	public String getNum() {
-		return num;
-	}
-	@XmlElement
-	public void setNum(String num) {
-		this.num = num;
-	}
-	public int getNit() {
-		return nit;
-	}
-	@XmlElement
-	public void setNit(int nit) {
-		this.nit = nit;
-	}
+//	public int getNit() {
+//		return nit;
+//	}
+//	@XmlElement
+//	public void setNit(int nit) {
+//		this.nit = nit;
+//	}
 	public String getRazonsocial() {
 		return razonsocial;
 	}
