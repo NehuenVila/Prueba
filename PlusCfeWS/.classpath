@@ -13,5 +13,11 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="C:/Users/Nehuen/Documents/nehuen/JavaWork/JavaJars/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nehuen/Documents/nehuen/JavaWork/JavaJars/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nehuen/Documents/nehuen/JavaWork/JavaJars/gson-2.6.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nehuen/Documents/nehuen/JavaWork/JavaJars/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nehuen/Documents/nehuen/JavaWork/JavaJars/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nehuen/Documents/nehuen/JavaWork/JavaJars/java-json.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
